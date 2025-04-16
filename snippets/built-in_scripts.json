@@ -18,7 +18,7 @@
     "// # ========================== ALMA Calculation ============================= #",
     "",
     "${1:// # ============================ ALMA Plotting ============================== #",
-    "plot(series = ALMA, title = \"ALMA\", color = color.new(color = color.blue, transp = 0))",
+    "plot(series = ALMA, title = \"ALMA\", color = color.new(color.blue, 0))",
     "// # ============================ ALMA Plotting ============================== #}",
     "",
     "$0"
@@ -537,8 +537,8 @@
     "// # =================== Chaikin Money Flow Calculation ====================== #",
     "",
     "${1:// ======================= Chaikin Money Flow Plotting ======================= #",
-    "plot(series = Moneyflow, title = \"MF\",   color = color.new(color   #43A047, transp = 0))",
-    "hline(price = 0,         title = \"Zero\", color = color.new(color   #787B86, transp = 0), linestyle = hline.style_dashed)",
+    "plot(series = Moneyflow, title = \"MF\",   color = color.new(#43A047, 0))",
+    "hline(price = 0,         title = \"Zero\", color = color.new(#787B86, 0), linestyle = hline.style_dashed)",
     "// # ===================== Chaikin Money Flow Plotting ======================= #}",
     "${0}"
   ],
@@ -564,8 +564,8 @@
     "// # =================== Chaikin Oscillator Calculation ====================== #",
     "",
     "${1:// # ===================== Chaikin Oscillator Plotting ======================= #",
-    "plot(series = co_osc , title = \"Chaikin Oscillator\", color = color.new(color = #EC407A, transp = 0))",
-    "hline(price = 0      , title = \"Zero\"              , color = color.new(color = #787B86, transp = 0), linestyle = hline.style_dashed)",
+    "plot(series = co_osc , title = \"Chaikin Oscillator\", color = color.new(#EC407A, 0))",
+    "hline(price = 0      , title = \"Zero\"              , color = color.new(#787B86, 0), linestyle = hline.style_dashed)",
     "// # ===================== Chaikin Oscillator Plotting ======================= #}",
     "$0"
   ],
@@ -589,8 +589,8 @@
     "// # ==================== Chande Kroll Stop Calculation ====================== #",
     "",
     "${1:// # ===================== Chande Kroll Stop Plotting ======================== #",
-    "plot(series = stop_long  , color = color.new(color = #2962FF, transp = 0))",
-    "plot(series = stop_short , color = color.new(color = #FF6D00, transp = 0))",
+    "plot(series = stop_long  , color = color.new(#2962FF, 0))",
+    "plot(series = stop_short , color = color.new(#FF6D00, 0))",
     "// # ===================== Chande Kroll Stop Plotting ======================== #}",
     "$0"
   ],
@@ -619,8 +619,8 @@
     "// # =========================== CMO Calculation ============================= #",
     "",
     "${1:// # ============================ CMO Plotting =============================== #",
-    "plot(series = chandeMO , title = \"Chande MO\" , color = color.new(color = #2962FF  , transp = 0))",
-    "hline(price = 0        , title=\"Zero Line\"   , color = color.new(color = #787B86  , transp = 0) , linestyle = hline.style_dashed)",
+    "plot(series = chandeMO , title = \"Chande MO\" , color = color.new(#2962FF, 0))",
+    "hline(price = 0        , title=\"Zero Line\"   , color = color.new(#787B86, 0), linestyle = hline.style_dashed)",
     "// # ============================ CMO Plotting =============================== #}",
     "$0"
   ],
@@ -630,7 +630,7 @@
 "Chop Zone ⇨ 𝑓𝑥": {
   "prefix": ["s.cz", "script.chop.zone"],
   "body": [
-    "${1://@version=5",
+    "${1://@version=6",
     "//indicator(title = \"Chop Zone\", format=format.price, precision=0, timeframe=\"\", timeframe_gaps=true)}",
     "// # ========================== Chop Zone sources ============================ #",
     "cz_source                   = close",
@@ -675,7 +675,7 @@
     "// # ========================== Chop Zone Colors ============================= #",
     "",
     "// # ========================= Chop Zone Plotting ============================ #",
-    "plot(series = 1, color = color.new(color = cz_color, transp = 0), style  = plot.style_columns)",
+    "plot(series = 1, color = color.new(cz_color, 0), style  = plot.style_columns)",
     "// # ========================= Chop Zone Plotting ============================ #}",
     "${0}"
   ],
@@ -697,9 +697,9 @@
     "// # ==================== Choppiness Index Calculation ======================= #",
     "",
     "${1:// # ====================== Choppiness Index Plotting ======================== #",
-    "plot( series = chin           , title  = \"CHOP\"       , color = color.new(#2962FF, transp = 0) , offset    = chin_offset)",
-    "ch_band1 = hline(price = 61.8 , title  = \"Upper Band\" , color = color.new(#787B86, transp = 0) , linestyle = hline.style_dashed)",
-    "ch_band0 = hline(price = 38.2 , title  = \"Lower Band\" , color = color.new(#787B86, transp = 0) , linestyle = hline.style_dashed)",
+    "plot( series = chin           , title  = \"CHOP\"       , color = color.new(#2962FF, 0) , offset    = chin_offset)",
+    "ch_band1 = hline(price = 61.8 , title  = \"Upper Band\" , color = color.new(#787B86, 0) , linestyle = hline.style_dashed)",
+    "ch_band0 = hline(price = 38.2 , title  = \"Lower Band\" , color = color.new(#787B86, 0) , linestyle = hline.style_dashed)",
     "fill (hline1 = ch_band1       , hline2 = ch_band0     , color = color.rgb(33, 150, 243, 90)    , title     = \"Background\")",
     "// # ====================== Choppiness Index Plotting ======================== #}",
     "$0"
@@ -721,9 +721,9 @@
     "// # ================= Commodity Channel Index Calculation =================== #",
     "",
     "${1:// # ================== Commodity Channel Index Plotting ===================== #",
-    "plot( series = cci    ,  title = \"CCI\"         , color = color.new(color = #2962FF   , transp = 0))",
-    "cci_b1 = hline( 100   ,  title = \"Upper Band\"  , color = color.new(color = #787B86   , transp = 0), linestyle = hline.style_dashed)",
-    "cci_b0 = hline(-100   ,  title = \"Lower Band\"  , color = color.new(color = #787B86   , transp = 0), linestyle = hline.style_dashed)",
+    "plot( series = cci    ,  title = \"CCI\"         , color = color.new(#2962FF, 0))",
+    "cci_b1 = hline( 100   ,  title = \"Upper Band\"  , color = color.new(#787B86, 0), linestyle = hline.style_dashed)",
+    "cci_b0 = hline(-100   ,  title = \"Lower Band\"  , color = color.new(#787B86, 0), linestyle = hline.style_dashed)",
     "fill( hline1 = cci_b1 ,  hline2 = cci_b0       , color = color.rgb(33, 150, 243, 90) , title = \"Background\")",
     "// # ================== Commodity Channel Index Plotting ===================== #}",
     "$0"

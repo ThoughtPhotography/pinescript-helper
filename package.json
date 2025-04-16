@@ -1,11 +1,11 @@
 {
-	"name": "pinescript-helper",
-	"displayName": "PineScript Helper",
-	"description": "Language support for Pine Script V5 with Syntax Highlighting & Snippets",
+	"name": "pinescript-v6-helper",
+	"displayName": "PineScript v6 Helper",
+	"description": "Language support for Pine Script v6 with Syntax Highlighting & Snippets",
 	"icon": "images/pineicon.png",
 	"publisher": "salbert11",
 	"license": "MIT",
-	"version": "3.4.3",
+	"version": "3.4.4",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
@@ -20,7 +20,7 @@
 	"keywords": [
 		"pine",
 		"pinescript",
-		"Pine Script V5",
+		"Pine Script v6",
 		"pine script",
 		"pinecode",
 		"pine code",

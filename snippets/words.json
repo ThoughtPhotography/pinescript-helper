@@ -19,16 +19,16 @@
   "bgcolor = 𝑥": {
     "prefix": "bgcolor",
     "body": [
-      "bgcolor = color.new(color = ${1| ,color.aqua,color.black,color.blue,color.fuchsia,color.gray,color.green,color.lime,color.maroon,color.navy,color.olive,color.orange,color.purple,color.red,color.silver,color.teal,color.white,color.yellow|}, transp = ${2:0})${0}"
+      "bgcolor = color.new(${1| ,color.aqua,color.black,color.blue,color.fuchsia,color.gray,color.green,color.lime,color.maroon,color.navy,color.olive,color.orange,color.purple,color.red,color.silver,color.teal,color.white,color.yellow|}, ${2:0})${0}"
     ],
-    "description": "bgcolor = color.new(color = , transp = )"
+    "description": "bgcolor(color.new(color, transparency))"
   },
   
   
   "bordercolor = 𝑥": {
     "prefix": "bordercolor",
     "body": [
-      "bordercolor = color.new(color = ${1| ,color.aqua,color.black,color.blue,color.fuchsia,color.gray,color.green,color.lime,color.maroon,color.navy,color.olive,color.orange,color.purple,color.red,color.silver,color.teal,color.white,color.yellow|}, transp = ${2:0})$0"
+      "bordercolor = color.new(${1| ,color.aqua,color.black,color.blue,color.fuchsia,color.gray,color.green,color.lime,color.maroon,color.navy,color.olive,color.orange,color.purple,color.red,color.silver,color.teal,color.white,color.yellow|}, ${2:0})$0"
     ],
     "description": "bordercolor = 𝑥"
   },
@@ -60,9 +60,9 @@
   "color = 𝑥": {
     "prefix": "color",
     "body": [
-      "color = color.new(color = ${1| ,color.aqua,color.black,color.blue,color.fuchsia,color.gray,color.green,color.lime,color.maroon,color.navy,color.olive,color.orange,color.purple,color.red,color.silver,color.teal,color.white,color.yellow|}, transp = ${2:0})${0}"
+      "color = color.new(${1| ,color.aqua,color.black,color.blue,color.fuchsia,color.gray,color.green,color.lime,color.maroon,color.navy,color.olive,color.orange,color.purple,color.red,color.silver,color.teal,color.white,color.yellow|}, ${2:0})$0"
     ],
-    "description": "color = color.new(color = , transp = )"
+    "description": "color.new(color, transparency)"
   },
   
   "comment = 𝑥": {
@@ -460,13 +460,12 @@
   },
   
   "//@version=5": {
-    "prefix": ["//", "version"],
+    "prefix": ["//@"],
     "body": [
-      "//@version=5",
-      "",
+      "//@version=6",
       "$0"
     ],
-    "description": "//@version=5"
+    "description": "//@version=6"
   },
   
   "@ 𝑥": {
@@ -488,6 +487,14 @@
       "${0}"
     ],
     "description": "@(function|param|returns) ..."
+  },
+  
+  "fillcolor = 𝑥": {
+    "prefix": "fillcolor",
+    "body": [
+      "fillcolor = color.new(${1| ,color.aqua,color.black,color.blue,color.fuchsia,color.gray,color.green,color.lime,color.maroon,color.navy,color.olive,color.orange,color.purple,color.red,color.silver,color.teal,color.white,color.yellow|}, ${2:0})$0"
+    ],
+    "description": "fillcolor = 𝑥"
   }
 
 }

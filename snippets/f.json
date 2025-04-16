@@ -10,7 +10,7 @@
       "for i = 0 to array.size(A) - 1",
       "    lab := lab + str.tostring(array.get(A, i)) + \" \"",
       "",
-      "arrayLabel = label.new(x = bar_index, y = close, text = lab, color = color.new(color = color.white transp = 15), textcolor = color.new(color = color.black, transp = 0), size = size.normal, textalign = text.align_right)",
+      "arrayLabel = label.new(x = bar_index, y = close, text = lab, color = color.new(color.white, 15), textcolor = color.new(color.black, 0), size = size.normal, textalign = text.align_right)",
       "label.delete(l[1])",
       "// # ========================= Array Content Label =========================== #",
       "",

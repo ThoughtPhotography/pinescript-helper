@@ -7,3 +7,8 @@ node_modules/**
 .vscodeignore
 webpack.config.js
 vsc-extension-quickstart.md
+/.specstory
+/.cursorindexingignore
+/.history
+/Pine Script Release Notes.pdf
+/Pine Script v6 Migation Guide.pdf

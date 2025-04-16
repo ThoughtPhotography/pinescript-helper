@@ -6,7 +6,7 @@
   "body": [
     "// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/",
     "// © ${1:username}",
-    "//@version=5",
+    "//@version=6",
     "",
     "$0"
   ],
